@@ -1,44 +1,21 @@
 import React, { useState, useCallback } from 'react';
-import { Search, Car, AlertTriangle, ExternalLink } from 'lucide-react';
+import { Search, Car, AlertTriangle } from 'lucide-react';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { LanguageSelector } from './components/LanguageSelector';
 import { Branding } from './components/Branding';
 import { useTranslation } from './hooks/useTranslation';
-import { fetchViolations } from './services/api';
-import { isValidPlate, formatPlate } from './utils/validators';
+import { useViolations } from './hooks/useViolations';
 import type { ViolationData } from './types';
 
 function ViolationsApp() {
   const { t } = useTranslation();
+  const { data, loading, error, searchViolations } = useViolations();
   const [plate, setPlate] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState('');
-  const [data, setData] = useState<ViolationData | null>(null);
 
   const handleSearch = useCallback(async (e: React.FormEvent) => {
     e.preventDefault();
-    const formattedPlate = formatPlate(plate);
-    
-    if (!isValidPlate(formattedPlate)) {
-      setError(t('error.invalidPlate'));
-      return;
-    }
-
-    setLoading(true);
-    setError('');
-    setData(null);
-
-    try {
-      const violationData = await fetchViolations(formattedPlate);
-      setData(violationData);
-    } catch (err) {
-      if (err instanceof Error) {
-        setError(t(`error.${err.message === 'NOT_FOUND' ? 'notFound' : 'generic'}`));
-      }
-    } finally {
-      setLoading(false);
-    }
-  }, [plate, t]);
+    await searchViolations(plate);
+  }, [plate, searchViolations]);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-blue-100 relative">
@@ -148,9 +125,7 @@ function ViolationsApp() {
                       <div>
                         <p className="text-sm text-gray-600">{t('violations.status')}</p>
                         <div className="flex items-center">
-                          <span className={`w-2 h-2 rounded-full mr-2 ${
-                            multa.status.toLowerCase().includes('pago') ? 'bg-green-500' : 'bg-yellow-500'
-                          }`} />
+                          <span className={`w-2 h-2 rounded-full mr-2 ${multa.status.toLowerCase().includes('pago') ? 'bg-green-500' : 'bg-yellow-500'}`} />
                           <p className="font-medium">{multa.status}</p>
                         </div>
                       </div>
@@ -174,12 +149,10 @@ function ViolationsApp() {
   );
 }
 
-function App() {
+export default function App() {
   return (
     <LanguageProvider>
       <ViolationsApp />
     </LanguageProvider>
   );
 }
-
-export default App;
