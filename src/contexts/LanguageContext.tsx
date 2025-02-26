@@ -1,26 +1,18 @@
-import React, { createContext, useState, useCallback } from 'react';
-import type { Language } from '../i18n/translations';
+import React, { createContext } from 'react';
 
 interface LanguageContextType {
-  language: Language;
-  setLanguage: (lang: Language) => void;
+  language: 'pt';
 }
 
 export const LanguageContext = createContext<LanguageContextType>({
-  language: 'pt',
-  setLanguage: () => {},
+  language: 'pt'
 });
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguageState] = useState<Language>('pt');
-
-  const setLanguage = useCallback((lang: Language) => {
-    setLanguageState(lang);
-    document.documentElement.lang = lang;
-  }, []);
+  document.documentElement.lang = 'pt';
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage }}>
+    <LanguageContext.Provider value={{ language: 'pt' }}>
       {children}
     </LanguageContext.Provider>
   );
