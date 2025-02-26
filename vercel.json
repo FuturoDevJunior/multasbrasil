@@ -1,6 +1,6 @@
 {
   "framework": "vite",
-  "buildCommand": "npx tsc && npx vite build",
+  "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "routes": [
     {
