@@ -32,7 +32,12 @@ function ViolationsApp() {
                 </p>
               </div>
               <p className="text-white/90 text-sm md:text-base max-w-2xl">
-                Este é um site para fins exclusivamente educacionais. Não nos responsabilizamos por qualquer uso indevido das informações. Para testes, utilize placas como ABC1234 ou XYZ5678.
+                Este é um site para fins exclusivamente educacionais. Não nos responsabilizamos por qualquer uso indevido das informações. Para testes, utilize placas como:
+                • ABC1234 (Multas Pagas)
+                • XYZ5678 (Multas Pendentes)
+                • DEF9012 (Sem Multas)
+                • GHI3456 (Multas Graves)
+                • JKL7890 (Multas Leves)
               </p>
               <button
                 onClick={() => setShowDisclaimer(false)}
