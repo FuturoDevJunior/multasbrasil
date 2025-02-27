@@ -6,6 +6,7 @@ import { useTranslation } from './hooks/useTranslation';
 import { useViolations } from './hooks/useViolations';
 import { formatViolationDate, formatCurrency } from './utils/validators';
 import type { ViolationData } from './types';
+import { ViolationsSkeleton } from './components/ViolationsSkeleton';
 
 
 function ViolationsApp() {
@@ -101,6 +102,8 @@ function ViolationsApp() {
               </button>
             </div>
           </form>
+
+          {loading && <ViolationsSkeleton />}
 
           {error && (
             <div className="bg-red-50 border-l-4 border-red-500 p-4 rounded-r-lg shadow-sm animate-fadeIn" role="alert">
