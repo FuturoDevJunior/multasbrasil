@@ -10,11 +10,12 @@
 [![Vite](https://img.shields.io/badge/Vite-5.0.0-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4.1-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
 [![Jest](https://img.shields.io/badge/Jest-Tested-C21325?style=for-the-badge&logo=jest)](https://jestjs.io/)
-[![Code Quality](https://img.shields.io/badge/Code_Quality-A+-success?style=for-the-badge)]()
-[![Clean Code](https://img.shields.io/badge/Clean_Code-SOLID-blue?style=for-the-badge)]()
+[![Code Quality](https://img.shields.io/badge/Code_Quality-A+-success?style=for-the-badge)]()  
+[![Clean Code](https://img.shields.io/badge/Clean_Code-SOLID-blue?style=for-the-badge)]()  
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](LICENSE)
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/seu-usuario/multasbrasil/main/preview.gif" alt="Multas Brasil Preview" width="600px" />
+  <img src="https://raw.githubusercontent.com/FuturoDevJunior/multasbrasil/main/preview.gif" alt="Multas Brasil Preview" width="600px" />
 </p>
 
 </div>
@@ -23,7 +24,7 @@
 
 Um aplicativo web moderno e profissional para consulta de multas de veículos no Brasil, desenvolvido com as mais recentes tecnologias do mercado e seguindo as melhores práticas de desenvolvimento de software.
 
-[Ver Demo](https://multasbrasil.vercel.app/) · [Reportar Bug](https://github.com/seu-usuario/multasbrasil/issues) · [Solicitar Feature](https://github.com/seu-usuario/multasbrasil/issues)
+[Ver Demo](https://multasbrasil.vercel.app/) · [Reportar Bug](https://github.com/FuturoDevJunior/multasbrasil/issues) · [Solicitar Feature](https://github.com/FuturoDevJunior/multasbrasil/issues)
 
 ## 📋 Sobre o Projeto
 
@@ -83,7 +84,7 @@ Para testar diferentes cenários, utilize as seguintes placas:
 
 ```bash
 # Clone o repositório
-git clone https://github.com/seu-usuario/multasbrasil.git
+git clone https://github.com/FuturoDevJunior/multasbrasil.git
 
 # Entre no diretório
 cd multasbrasil
@@ -108,7 +109,7 @@ npm run dev
 
 Una aplicación web moderna y profesional para consultar multas de vehículos en Brasil, desarrollada con las tecnologías más recientes del mercado y siguiendo las mejores prácticas de desarrollo de software.
 
-[Ver Demo](https://multasbrasil.vercel.app/) · [Reportar Error](https://github.com/seu-usuario/multasbrasil/issues) · [Solicitar Función](https://github.com/seu-usuario/multasbrasil/issues)
+[Ver Demo](https://multasbrasil.vercel.app/) · [Reportar Error](https://github.com/FuturoDevJunior/multasbrasil/issues) · [Solicitar Función](https://github.com/FuturoDevJunior/multasbrasil/issues)
 
 ## 📋 Sobre el Proyecto
 
@@ -168,7 +169,7 @@ Para probar diferentes escenarios, utilice las siguientes matrículas:
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/seu-usuario/multasbrasil.git
+git clone https://github.com/FuturoDevJunior/multasbrasil.git
 
 # Entrar en el directorio
 cd multasbrasil
@@ -193,7 +194,7 @@ npm run dev
 
 A modern and professional web application for querying vehicle fines in Brazil, developed with the latest market technologies and following software development best practices.
 
-[View Demo](https://multasbrasil.vercel.app/) · [Report Bug](https://github.com/seu-usuario/multasbrasil/issues) · [Request Feature](https://github.com/seu-usuario/multasbrasil/issues)
+[View Demo](https://multasbrasil.vercel.app/) · [Report Bug](https://github.com/FuturoDevJunior/multasbrasil/issues) · [Request Feature](https://github.com/FuturoDevJunior/multasbrasil/issues)
 
 ## 📋 About The Project
 
@@ -253,7 +254,7 @@ To test different scenarios, use the following license plates:
 
 ```bash
 # Clone the repository
-git clone https://github.com/seu-usuario/multasbrasil.git
+git clone https://github.com/FuturoDevJunior/multasbrasil.git
 
 # Enter the directory
 cd multasbrasil
@@ -270,12 +271,4 @@ npm run dev
 - ⭐ **Test Coverage**: > 90%
 - 🚀 **Performance**: 95/100 on Lighthouse
 - 📱 **Responsiveness**: 100% adaptable
-- 🌐 **Browser Support**: Chrome, Firefox, Safari, Edge
-
----
-
-<div align="center">
-
-### 🌟 Developed with technical excellence and attention to detail
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-DevFerreiraG-blue?style=for-the-badge&logo=linkedin)](https
+- 🌐 **Browser Support**:
